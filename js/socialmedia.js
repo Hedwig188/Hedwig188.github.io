@@ -14,3 +14,7 @@
 // $("iframe#twitter-widget-0").
 
 // },1000);
+$("iframe#fb_post").contents().find('._8u _42ef').css("text-align","right");
+$("iframe#fb_post").contents().find('._8o _8r lfloat _ohe').css("text-align","right");
+
+
