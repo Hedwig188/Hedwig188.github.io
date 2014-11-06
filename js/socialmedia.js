@@ -1,3 +1,20 @@
+var flag = 1;
+var pinterest_link;
+var pinterest_type;
+var pinterest_tag;
+ $(document).ready(function() {
+ 	// if(flag == 2){
+ 	// 	$('#recent_content').find('a').attr('href','http://www.pinterest.com/racemill/'+tag);
+		// $('#recent_content').find('a').attr('data-pin-do','embedBoard');
+		// flag = 1;
+ 	// }
+ 	// alert(flag);
+ 	if(flag == 2){
+ 		$('#recent_content').find('div').attr('display','none');
+ 		flag = 1;
+ 	}
+ });
+
  var userFeed = new Instafeed({
         get: 'user',
         userId: 274348410,
@@ -14,7 +31,15 @@
 // $("iframe#twitter-widget-0").
 
 // },1000);
-$("iframe#fb_post").contents().find('._8u _42ef').css("text-align","right");
-$("iframe#fb_post").contents().find('._8o _8r lfloat _ohe').css("text-align","right");
+
+$('#pinit_submit').click(function(){
+	pinterest_tag=$('#pinit_input').val();
+	flag = 2;
+	// pinterest_link=$('#recent_content').find('div').attr('display','none');
+	// pinterest_type=$('#recent_content').find('a').attr('data-pin-do');
+	// alert(pinterest_link);
+	// $('#recent_content').find('div').attr('display','none');
+		window.location.reload(true);
+});
 
 

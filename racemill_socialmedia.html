@@ -1127,10 +1127,14 @@ background: none repeat scroll 0% 0% white !important;
 							</div></div><!-- #races_slider_slide -->
 			</div><!-- #races_slider_holder --></div><!-- #masthead -->
 		<div id="column" class="two_wide"><nav id="race_nav" class="article-body"><ul class="nav nav-tabs FEATURES" id="articles_content_nav">
-				<li class="active"><a href="#recent_content" title="PINTEREST" data-toggle="tab"><i class="fa fa-pinterest-square fa-2x"></i></a></li><li><a href="#endurance_content" title="TWITTER" data-toggle="tab"><i class="fa fa-twitter fa-2x"></i></a></li><li><a href="#nutrition_content" title="FACEBOOK" data-toggle="tab"><i class="fa fa-facebook-square fa-2x"></i></a></li><li><a id="pinterest_tab"href="#strength_content" title="INSTAGRAM" data-toggle="tab"><i class="fa fa-instagram fa-2x"></i></a></li></ul></nav><div class="content_stack article-body tab-content">
+				<li class="active"><a href="#recent_content" title="PINTEREST" data-toggle="tab"><i class="fa fa-pinterest-square fa-2x"></i></a></li><li><a href="#endurance_content" title="TWITTER" data-toggle="tab"><i class="fa fa-twitter fa-2x"></i></a></li><li><a href="#nutrition_content" title="FACEBOOK" data-toggle="tab"><i class="fa fa-facebook-square fa-2x"></i></a></li><li><a href="#strength_content" title="INSTAGRAM" data-toggle="tab"><i class="fa fa-instagram fa-2x"></i></a></li><li class="active"><a href="#social_setting" title="SETTING" data-toggle="tab"><i class="fa fa-cog fa-2x"></i></a></li>
+			</ul></nav><div class="content_stack article-body tab-content">
 			
 			<div id="recent_content" class="stacked_content tab-pane active">
-				<a data-pin-do="embedUser" href="http://www.pinterest.com/racemill/" data-pin-scale-width="200" data-pin-board-width="900">Visit Race Mill's profile on Pinterest.</a>
+				<div class="social_title">
+				<a data-pin-do="buttonFollow" href="http://www.pinterest.com/racemill/" >Follow</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				</div>
+				<a data-pin-do="embedUser" href="http://www.pinterest.com/racemill/" data-pin-scale-width="215" data-pin-scale-height="1800">Visit Race Mill's profile on Pinterest.</a>
 			<!-- Please call pinit.js only once per page -->
 			<script type="text/javascript">
 				(function(d){
@@ -1142,6 +1146,7 @@ background: none repeat scroll 0% 0% white !important;
 				    p.setAttribute('data-pin-hover', true);
 				}(document));
 			</script>
+		
 				
 	</div>
 
@@ -1152,16 +1157,62 @@ background: none repeat scroll 0% 0% white !important;
 		
 	</div>
 		<div id="nutrition_content" class="stacked_content tab-pane">
-			<iframe id="fb_post" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fracemill&amp;width=900&amp;height=1200&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:900px; height:1200px;" allowTransparency="true"></iframe>
-			<iframe id="fb_like" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fracemill&amp;width=900&amp;height=500&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:900px; height:500px;" allowTransparency="true"></iframe>
+			<div class="social_title">
+				<iframe src="http://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fracemill&amp;width&amp;height=35&amp;colorscheme=light&amp;layout=button&amp;show_faces=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; border:none; overflow:hidden; height:20px; width:73px; margin-top:10px" allowTransparency="true"></iframe>
+			</div>
+			<iframe id="fb_post" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fracemill&amp;width=890&amp;height=1200&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:890px; height:1200px;background:rgb(255,255,255)" allowTransparency="true"></iframe>
+			<iframe id="fb_like" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fracemill&amp;width=890&amp;height=500&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:890px; height:500px; background:rgb(255,255,255)" allowTransparency="true"></iframe>
 
 		</div>
 		<div id="strength_content" class="stacked_content tab-pane">
-			<iframe name="ins_content" width="100%" height="600px" src="http://instagram.com/p/tL68h3NUw-/embed"></iframe>
+			<iframe name="ins_content" width="100%" height="965px" src="http://instagram.com/p/tL68h3NUw-/embed"></iframe>
 				<div id="ins_cover">
 				<div id="instafeed"></div>
 				</div>
 
+		</div>
+		<div id="social_setting" class="stacked_content tab-pane">
+			<div id="pinterest_account">
+				<div class="social_label"><i class="fa fa-pinterest-square fa-2x"></i></br><label>PINTEREST</label></div>
+				<div class="change_pwd">change password:
+					<a href="https://www.pinterest.com/settings/">https://www.pinterest.com/settings/</a>
+				</div>
+				<div id="pinit_addtag">Additional #'s
+					<input id="pinit_input"></input>
+					<button id="pinit_submit">submit</button>
+				</div>
+			</div>
+			<div id="twitter_account">
+				<div class="social_label"><i class="fa fa-twitter fa-2x"></i></br><label>TWITTER</label></div>
+				<div class="change_pwd">change password:
+					<a href="https://twitter.com/settings/password">https://twitter.com/settings/password</a>
+				</div>
+				<div id="twitter_addtag">Additional #'s
+					<input id="twitter_input"></input>
+					<button id="twitter_submit">submit</button>
+				</div>
+			</div>
+			<div id="facebook_account">
+				<div class="social_label"><i class="fa fa-facebook-square fa-2x"></i></br><label>FACEBOOK</label></div>
+				<div class="change_pwd">change password:
+					<a href="https://www.facebook.com/settings?tab=account&section=password&view">https://www.facebook.com/settings?tab=account&section=password&view</a>
+				</div>
+				<div id="facebook_addtag">Additional #'s
+					<input id="facebook_input"></input>
+					<button id="facebook_submit">submit</button>
+				</div>
+			</div>
+
+			<div id="instagram_account">
+				<div class="social_label"><i class="fa fa-instagram fa-2x"></i></br><label>INSTAGRAM</label></div>
+				<div class="change_pwd">change password:
+					<a href="https://instagram.com/accounts/password/change/">https://instagram.com/accounts/password/change/</a>
+				</div>
+				<div id="ins_addtag">Additional #'s
+					<input id="ins_input"></input>
+					<button id="ins_submit">submit</button>
+				</div>
+			</div>
 		</div>
 	</div><!-- .content_stack --></div><!-- #column -->	
 

@@ -33,5 +33,47 @@
 	color: rgb(0,66,99);
 }
 
+#pinterest_account,#twitter_account,#facebook_account,#instagram_account{
+	height:300px;
+	width:100%;
+	border-bottom: 2px solid rgb(178,178,178);
+	background-color: rgb(255,255,255)
+}
+
+.social_label{
+	margin-left: 6%;
+	font-size: 16px;
+	padding-top: 2%;
+}
+
+.social_label i{
+	color:rgb(0,66,99);
+}
+
+.change_pwd, #pinit_addtag,#facebook_addtag,#twitter_addtag,#ins_addtag{
+	color:rgb(137,137,137);
+	margin-left: 20%;
+	font-size: 16px;
+}
+
+.change_pwd a:link,.change_pwd a:visited, .change_pwd a:hover, .change_pwd a:active{
+	color:rgb(137,137,137);
+}
+
+#pinit_input,#twitter_input,#facebook_input,#ins_input{
+	margin-left: 5%;
+}
+
+
+.social_title{
+	text-align: right;
+	background:rgb(255,255,255);
+	height:40px;
+	line-height: 40px;
+	border-bottom: 1px solid rgb(232,232,232);
+
+}
+
+
 
 
