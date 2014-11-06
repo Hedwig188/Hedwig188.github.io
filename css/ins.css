@@ -34,10 +34,10 @@
 }
 
 #pinterest_account,#twitter_account,#facebook_account,#instagram_account{
-	height:300px;
+	height:200px;
 	width:100%;
 	border-bottom: 2px solid rgb(178,178,178);
-	background-color: rgb(255,255,255)
+	background-color: rgb(255,255,255);
 }
 
 .social_label{
