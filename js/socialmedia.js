@@ -9,7 +9,8 @@
     });
     userFeed.run();
 
-// $("#pinterest_tab").click(function(){
-// 	alert("yes");
-//   document.getElementById("strength_content").style.display="true";	
-// });
+// window.setTimeout(function(){
+// $("iframe#twitter-widget-0").contents().find('body').css("width","900px");
+// $("iframe#twitter-widget-0").
+
+// },1000);
