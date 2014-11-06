@@ -1,0 +1,38 @@
+
+
+#instafeed img{
+    padding :6px;
+    width :24%;
+    opacity: 1;
+    filter:alpha(opacity=100);
+}
+#instafeed img:hover{
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+}
+
+#instafeed{
+	/*text-align: center;*/
+	margin-left:4%;
+
+}
+
+#column li{
+	width:15%;
+}
+
+#column a{
+	text-align: center;
+}
+
+#column a:link{
+	color: rgb(178,178,178);
+}
+
+#column a:hover{
+	color: rgb(0,66,99);
+}
+
+
+
+
