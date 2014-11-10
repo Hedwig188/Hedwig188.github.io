@@ -20,17 +20,15 @@ var pinterest_tag;
         userId: 274348410,
         accessToken: '274348410.467ede5.c610e8b06c5645c29b92084060074a95',
         useHttp: true,
-        template: '<a href="{{link}}embed" target="ins_content"><img src="{{image}}"/></a>'
+        template: '<a href="{{link}}embed" target="ins_content"><img src="{{image}}"/></a>',
+        success:function({{model.data}}){
+
+        }
         
         
     });
     userFeed.run();
 
-// window.setTimeout(function(){
-// $("iframe#twitter-widget-0").contents().find('body').css("width","900px");
-// $("iframe#twitter-widget-0").
-
-// },1000);
 
 $('#pinit_submit').click(function(){
 	pinterest_tag=$('#pinit_input').val();
