@@ -74,6 +74,53 @@
 
 }
 
+#ins_content{
+	float:left;
+}
 
+#pop_instagram{
+	height:700px;
+	/*border:1px solid rgb(178,178,178);*/
+	width:30%;
+	background-color: #FFFFFF;
+	float: left;
+}
 
+#strength_content{
+	/*visibility:hidden;*/
+	display:block;
+	/*visibility:visible;*/
+}
+ .comment_name{
+ 	font-weight: bold;
+ 	font-size: 14px;
+ }
 
+ #ins_comment,#ins_title{
+ 	font-weight:normal;
+ 	font-size: 16px;
+ 	margin-top: 10px;
+ 	margin-left: 10px;
+ }
+
+ #comment_content{
+ 	font-weight: noraml;
+ 	font-size:14px;
+ 	margin-top:10px;
+ 	margin-left: 10px;
+ }
+ .comment_name p{
+ 	font-weight: normal;
+ }
+
+ #ins_username{
+ 	margin-top: 10px;
+ 	font-size: 20px;
+ 	color:rgb(0,66,99);
+ 	margin-left: 10px;
+ }
+
+ #ins_cover{
+ 	background-color: #FFFFFF;
+ 	width:100%;
+ }
