@@ -1,7 +1,7 @@
 
 var media_id;
 var user_id;
-var media_href = 'http://instagram.com/p/u_kRRNNUwT/';
+var media_href = 'http://instagram.com/p/s5Ti3_tRY3/';
 var title;
 var array = [];
 GetImageDetails();
@@ -29,8 +29,8 @@ $('#instagram_a').click(function(){
 
  var userFeed = new Instafeed({
         get: 'user',
-        userId: 274348410,
-        accessToken: '274348410.467ede5.c610e8b06c5645c29b92084060074a95',
+        userId: 586628396,
+        accessToken: '586628396.467ede5.fccf3e8283c14b0db74e8ecd57e4bc86',
         useHttp: true,
         template: '<a href="{{link}}embed" target="ins_content" class="instafeed_a"><img src="{{image}}" id="{{link}}"/></a>',
         
@@ -43,7 +43,7 @@ $('#instagram_a').click(function(){
                 type: "GET",  
                 async: true,  
                 contentType: "application/json; charset=utf-8", 
-                url :'https://api.instagram.com/v1/media/'+array[1]+'/comments?access_token=274348410.467ede5.c610e8b06c5645c29b92084060074a95',
+                url :'https://api.instagram.com/v1/media/'+array[1]+'/comments?access_token=586628396.467ede5.fccf3e8283c14b0db74e8ecd57e4bc86',
                 // url: 'https://api.instagram.com/v1/users/self/feed?access_token=274348410.467ede5.c610e8b06c5645c29b92084060074a95', 
                 // url:'https://api.instagram.com/v1/users/'+274348410+'/?access_token=274348410.467ede5.c610e8b06c5645c29b92084060074a95', 
                 dataType: "jsonp",  
@@ -54,7 +54,7 @@ $('#instagram_a').click(function(){
 
                     var key, count = 0;
                     for(key in data.data) {
-                      if(data.data.hasOwnProperty(key)&&count<8) {
+                      if(data.data.hasOwnProperty(key)) {
                         $('#comment_content').append('<div class="comment_name">'+data.data[count].from.username+':'+'<p>'+data.data[count].text+'</p></div>');
                         count++;
                       }
@@ -63,9 +63,8 @@ $('#instagram_a').click(function(){
             });  
         }
 
-        function GetImageDetails(){
-         
-            $.ajax({     
+function GetImageDetails(){
+    $.ajax({     
                 type: 'GET',     
                 // url: 'https://api.instagram.com/oembed?url=http://instagram.com/p/tL68h3NUw-/',
                 url: 'https://api.instagram.com/oembed?url='+window.media_href, 
@@ -84,7 +83,45 @@ $('#instagram_a').click(function(){
                 }
             });
 
+}
+
+$(function() {
+    var ele   = $('#scroll');
+    var speed = 25, scroll = 5, scrolling;
+    
+    $('#scroll-up').mouseenter(function() {
+        // Scroll the element up
+        scrolling = window.setInterval(function() {
+            ele.scrollTop( ele.scrollTop() - scroll );
+        }, speed);
+    });
+    
+    $('#scroll-down').mouseenter(function() {
+        // Scroll the element down
+        scrolling = window.setInterval(function() {
+            ele.scrollTop( ele.scrollTop() + scroll );
+        }, speed);
+    });
+    
+    $('#scroll-up, #scroll-down').bind({
+        click: function(e) {
+            // Prevent the default click action
+            e.preventDefault();
+        },
+        mouseleave: function() {
+            if (scrolling) {
+                window.clearInterval(scrolling);
+                scrolling = false;
+            }
         }
+    });
+});
+
+
+
+
+
+
 
 
 

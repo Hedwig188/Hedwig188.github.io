@@ -76,16 +76,19 @@
 
 #ins_content{
 	float:left;
+	border:0;
 }
 
 #pop_instagram{
 	height:700px;
-	/*border:1px solid rgb(178,178,178);*/
 	width:30%;
 	background-color: #FFFFFF;
 	float: left;
+	position: relative;
 }
-
+#pop_instagram a{
+	margin-left: 45%;
+}
 #strength_content{
 	/*visibility:hidden;*/
 	display:block;
@@ -101,6 +104,11 @@
  	font-size: 16px;
  	margin-top: 10px;
  	margin-left: 10px;
+ 	margin-right: 10px;
+ }
+
+ #ins_comment{
+ 	color: rgb(178,178,178);
  }
 
  #comment_content{
@@ -108,6 +116,7 @@
  	font-size:14px;
  	margin-top:10px;
  	margin-left: 10px;
+ 	color:rgb(85,85,85);
  }
  .comment_name p{
  	font-weight: normal;
@@ -116,7 +125,7 @@
  #ins_username{
  	margin-top: 10px;
  	font-size: 20px;
- 	color:rgb(0,66,99);
+ 	color:rgb(63,114,155);
  	margin-left: 10px;
  }
 
@@ -124,3 +133,10 @@
  	background-color: #FFFFFF;
  	width:100%;
  }
+
+ #scroll{
+ 	width: 200px;
+    height: 650px;
+    overflow: hidden;
+ }
+
