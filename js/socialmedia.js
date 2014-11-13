@@ -27,6 +27,16 @@ $('#instagram_a').click(function(){
     $('#strength_content').hide();
 });
 
+$('#facebook_a').click(function(){
+    // alert("n");
+    $('#strength_content').hide();
+});
+
+$('#twitter_a').click(function(){
+    // alert("n");
+    $('#strength_content').hide();
+});
+
  var userFeed = new Instafeed({
         get: 'user',
         userId: 586628396,
