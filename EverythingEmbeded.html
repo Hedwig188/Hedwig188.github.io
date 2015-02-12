@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+<p>Everything embeded</p>
+<div class="wrap" style="text-align: center">
+<script type="text/javascript">
+    // browser compatibility: get method for event 
+    // addEventListener(FF, Webkit, Opera, IE9+) and attachEvent(IE5-8)
+    var myEventMethod = 
+        window.addEventListener ? "addEventListener" : "attachEvent";
+    // create event listener
+    var myEventListener = window[myEventMethod];
+    // browser compatibility: attach event uses onmessage
+    var myEventMessage = 
+        myEventMethod == "attachEvent" ? "onmessage" : "message";
+    // register callback function on incoming message
+    myEventListener(myEventMessage, function (e) {
+        // we will get a string (better browser support) and validate
+        // if it is an int - set the height of the iframe #my-iframe-id
+        if (e.data === parseInt(e.data)) 
+            document.getElementById('idIframe').height = e.data + "px";
+    }, false);
+</script>
+<iframe class="frame" id="idIframe" width="800px" src="https://yawei.racemill.com/184#event-iframe-everything" frameborder="no" scrolling="no" ></iframe>
+<script type="text/javascript">
+    // all content including images has been loaded
+    window.onload = function() {
+        // post our message to the parent
+        window.parent.postMessage(
+            // get height of the content
+            document.body.scrollHeight
+            // set target domain
+            ,"*"
+        )
+    };
+</script>
+
+<script src="./js/jquery-1.7.2.min.js"></script>
+
+</div>
+</body>
+
+</html>
