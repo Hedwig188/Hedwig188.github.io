@@ -23,20 +23,10 @@
         if (e.data === parseInt(e.data)) 
             document.getElementById('idIframe').height = e.data + "px";
     }, false);
+
 </script>
-<iframe class="frame" id="idIframe" width="900px" src="https://yawei.racemill.com/254#event-iframe-everything" frameborder="no" scrolling="no"></iframe>
-<script type="text/javascript">
-    // all content including images has been loaded
-    window.onload = function() {
-        // post our message to the parent
-        window.parent.postMessage(
-            // get height of the content
-            document.body.scrollHeight
-            // set target domain
-            ,"*"
-        )
-    };
-</script>
+<iframe class="frame" id="idIframe" width="1000px" src="https://yawei.racemill.com/254#masthead" frameborder="no" scrolling="no"></iframe>
+
 
 <script src="./js/jquery-1.7.2.min.js"></script>
 
